@@ -7,10 +7,10 @@ Web-App/index.html
 </head>
 <body>
 
-<div class="container">
+<div class="main-box">
     <h1>Student Utility Management System</h1>
 
-    <div class="card">
+    <div class="calculator-box">
         <h2>Attendance Calculator</h2>
 
         <label>Total Classes</label>
@@ -19,9 +19,11 @@ Web-App/index.html
         <label>Attended Classes</label>
         <input type="number" id="attended">
 
-        <button onclick="calculateAttendance()">Calculate</button>
+        <button onclick="calculateAttendance()">Calculate Attendance</button>
 
-        <p id="result"></p>
+        <div class="result-box" id="result">
+            Result will appear here
+        </div>
     </div>
 </div>
 
