@@ -7,19 +7,23 @@ Web-App/index.html
 </head>
 <body>
 
-<h1>Student Utility Management System</h1>
+<div class="container">
+    <h1>Student Utility Management System</h1>
 
-<h2>Attendance Calculator</h2>
+    <div class="card">
+        <h2>Attendance Calculator</h2>
 
-<label>Total Classes:</label>
-<input type="number" id="total"><br><br>
+        <label>Total Classes</label>
+        <input type="number" id="total">
 
-<label>Attended Classes:</label>
-<input type="number" id="attended"><br><br>
+        <label>Attended Classes</label>
+        <input type="number" id="attended">
 
-<button onclick="calculateAttendance()">Calculate Attendance</button>
+        <button onclick="calculateAttendance()">Calculate</button>
 
-<p id="result"></p>
+        <p id="result"></p>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
