@@ -2,8 +2,8 @@ Web-App/style.css
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial;
-    background-color: #2563eb;
+    font-family: Arial, sans-serif;
+    background-color: #3b82f6; /* Blue background */
 }
 
 .page {
@@ -17,24 +17,26 @@ body {
 .card {
     background-color: white;
     padding: 20px;
-    width: 360px;
+    width: 380px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 h1 {
     text-align: center;
-    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 th {
-    background-color: #3b82f6;
+    background-color: #2563eb;
     color: white;
-    padding: 8px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 td {
@@ -44,21 +46,34 @@ td {
 input {
     width: 100%;
     padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 button {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    margin-top: 8px;
     background-color: #2563eb;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+button:hover {
+    background-color: #1e40af;
+}
+
+/* RESULT BOX */
 .result-box {
+    margin-top: 10px;
+    padding: 12px;
     text-align: center;
-    padding: 10px;
     font-weight: bold;
-    background-color: #e5e7eb;
-    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f3f4f6; /* Default grey */
+    color: black;
 }
