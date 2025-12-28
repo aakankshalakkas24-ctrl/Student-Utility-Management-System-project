@@ -3,30 +3,46 @@ Web-App/index.html
 <html>
 <head>
     <title>Student Utility Management System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<div class="main-box">
-    <h1>Student Utility Management System</h1>
+<div class="page">
+    <div class="card">
+        <h1>Student Utility Management System</h1>
 
-    <div class="calculator-box">
-        <h2>Attendance Calculator</h2>
+        <table>
+            <tr>
+                <th colspan="2">Attendance Calculator</th>
+            </tr>
 
-        <label>Total Classes</label>
-        <input type="number" id="total">
+            <tr>
+                <td>Total Classes</td>
+                <td><input type="number" id="total"></td>
+            </tr>
 
-        <label>Attended Classes</label>
-        <input type="number" id="attended">
+            <tr>
+                <td>Attended Classes</td>
+                <td><input type="number" id="attended"></td>
+            </tr>
 
-        <button onclick="calculateAttendance()">Calculate Attendance</button>
+            <tr>
+                <td colspan="2">
+                    <button onclick="calculateAttendance()">Calculate Attendance</button>
+                </td>
+            </tr>
 
-        <div class="result-box" id="result">
-            Result will appear here
-        </div>
+            <tr>
+                <td colspan="2">
+                    <div id="result" class="result-box">
+                        Result will appear here
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
