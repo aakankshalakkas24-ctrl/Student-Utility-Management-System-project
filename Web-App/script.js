@@ -1,26 +1,30 @@
 Web-App/script.js
 function calculateAttendance() {
-    var total = document.getElementById("total").value;
-    var attended = document.getElementById("attended").value;
-    var result = document.getElementById("result");
+    let total = document.getElementById("total").value;
+    let attended = document.getElementById("attended").value;
+    let resultBox = document.getElementById("result");
 
-    if (total === "" || attended === "" || total <= 0) {
-        result.innerHTML = "Please enter valid numbers";
-        result.style.backgroundColor = "#fecaca";
-        result.style.color = "red";
+    // Validation
+    if (total === "" || attended === "" || total <= 0 || attended < 0) {
+        resultBox.innerHTML = "Please enter valid numbers";
+        resultBox.style.backgroundColor = "#fecaca"; // Light red
+        resultBox.style.color = "red";
         return;
     }
 
-    var percentage = (attended / total) * 100;
+    // Calculate percentage
+    let percentage = (attended / total) * 100;
     percentage = percentage.toFixed(2);
 
-    result.innerHTML = "Attendance Percentage: " + percentage + "%";
+    // Display result
+    resultBox.innerHTML = "Attendance Percentage: " + percentage + "%";
 
+    // Color coding
     if (percentage >= 75) {
-        result.style.backgroundColor = "#bbf7d0";
-        result.style.color = "green";
+        resultBox.style.backgroundColor = "#bbf7d0"; // Light green
+        resultBox.style.color = "green";
     } else {
-        result.style.backgroundColor = "#fecaca";
-        result.style.color = "red";
+        resultBox.style.backgroundColor = "#fecaca"; // Light red
+        resultBox.style.color = "red";
     }
 }
