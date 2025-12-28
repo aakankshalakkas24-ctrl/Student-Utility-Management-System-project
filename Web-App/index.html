@@ -12,37 +12,35 @@ Web-App/index.html
     <div class="card">
         <h1>Student Utility Management System</h1>
 
-        <table>
-            <tr>
-                <th colspan="2">Attendance Calculator</th>
-            </tr>
+        <div class="input-group">
+            <label>Enter total classes:</label>
+            <input type="number" id="totalClasses" placeholder="Total classes">
+        </div>
 
-            <tr>
-                <td>Total Classes</td>
-                <td><input type="number" id="total" placeholder="Enter total classes"></td>
-            </tr>
+        <div class="input-group">
+            <label>Enter attended classes:</label>
+            <input type="number" id="attendedClasses" placeholder="Attended classes">
+        </div>
 
-            <tr>
-                <td>Attended Classes</td>
-                <td><input type="number" id="attended" placeholder="Enter attended classes"></td>
-            </tr>
+        <div class="input-group">
+            <label>Choose calculation:</label>
+            <select id="calculation">
+                <option value="attendance">Attendance Percentage</option>
+                <option value="double">Double Total Classes</option>
+                <option value="triple">Triple Total Classes</option>
+            </select>
+        </div>
 
-            <tr>
-                <td colspan="2">
-                    <button onclick="calculateAttendance()">Calculate Attendance</button>
-                </td>
-            </tr>
+        <button onclick="processStudentData()">Submit</button>
 
-            <tr>
-                <td colspan="2">
-                    <div id="result" class="result-box">
-                        Result will appear here
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <div class="result-box" id="resultBox">
+            Result will appear here
+        </div>
     </div>
 </div>
+
+<!-- Optional beep sound -->
+<audio id="beepSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
 
 <script src="script.js"></script>
 </body>
