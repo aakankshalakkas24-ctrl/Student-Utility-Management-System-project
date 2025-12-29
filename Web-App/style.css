@@ -2,65 +2,83 @@ Web-App/style.css
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #667eea, #764ba2);
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 420px;
-    margin: 50px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 h1 {
+    text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
 .form-box input {
-    width: 95%;
+    width: 100%;
     padding: 10px;
-    margin: 7px 0;
-    border-radius: 8px;
+    margin: 8px 0;
+    border-radius: 6px;
     border: 1px solid #ccc;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 20px;
-    background: linear-gradient(to right, #ff512f, #dd2476);
+    width: 100%;
+    padding: 10px;
+    background: #ff5722;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
 
+button:hover {
+    background: #e64a19;
+}
+
 .result-box {
-    margin-top: 25px;
-    padding: 18px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #fdfbfb, #ebedee);
-    text-align: left;
-    min-height: 120px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
 }
 
 .placeholder {
-    color: #999;
     text-align: center;
+    color: #555;
 }
 
-.label {
-    font-weight: bold;
-    color: #555;
+.result-box h3 {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 6px 0;
 }
 
 .name { color: #3f51b5; }
 .roll { color: #009688; }
 .attendance { color: #4caf50; }
 .marks { color: #9c27b0; }
-.grade { color: #ff5722; }
+.grade {
+    color: white;
+    background: #ff5722;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
