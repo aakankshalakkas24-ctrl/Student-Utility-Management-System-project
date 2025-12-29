@@ -1,21 +1,18 @@
 README.md
 # Student Utility Management System
 
-This is a beginner-friendly academic project created using C, C++, JavaScript, HTML, and CSS.
-
-## Features
-- Attendance calculator (Web & C program)
-- Grade calculation using C++ (OOP concepts)
-- Simple web interface
-
-## Technologies Used
+A colorful beginner-friendly project using:
 - C
 - C++
 - HTML
 - CSS
 - JavaScript
 
-## How to Run
-- Open `Web-App/index.html` in a browser
-- Compile C program using GCC
-- Compile C++ program using G++
+## Features
+- Student details input
+- Attendance & marks
+- Colorful UI
+- Single output box
+
+## Author
+Aakanksha Lakkas
