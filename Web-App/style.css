@@ -2,17 +2,17 @@ Web-App/style.css
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #89f7fe, #66a6ff);
-    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
 }
 
-.main-container {
+.container {
     width: 420px;
     margin: 50px auto;
     background: white;
     padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
     text-align: center;
 }
 
@@ -27,22 +27,17 @@ h1 {
     margin: 7px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 14px;
 }
 
 button {
-    margin-top: 12px;
-    padding: 10px 28px;
+    margin-top: 10px;
+    padding: 10px 30px;
     border: none;
     border-radius: 20px;
     background: linear-gradient(to right, #ff512f, #dd2476);
     color: white;
     font-size: 15px;
     cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
 }
 
 .result-box {
@@ -58,12 +53,14 @@ button:hover {
     color: #999;
     text-align: center;
 }
+
 .label {
     font-weight: bold;
     color: #555;
 }
 
-.value.name { color: #3f51b5; }
-.value.roll { color: #009688; }
-.value.attendance { color: #4caf50; }
-.value.marks { color: #9c27b0; }
+.name { color: #3f51b5; }
+.roll { color: #009688; }
+.attendance { color: #4caf50; }
+.marks { color: #9c27b0; }
+.grade { color: #ff5722; }
