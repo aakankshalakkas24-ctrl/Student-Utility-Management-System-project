@@ -15,14 +15,19 @@ Web-App/index.html
         <input type="number" id="roll" placeholder="Roll Number">
         <input type="number" id="attendance" placeholder="Attendance (%)">
         <input type="number" id="marks" placeholder="Marks">
-        <button onclick="showDetails()">Submit</button>
+
+        <!-- IMPORTANT: type="button" -->
+        <button type="button" onclick="showDetails()">Submit</button>
     </div>
 
+    <!-- OUTPUT BOX -->
     <div class="output-box" id="output">
-        Student details will appear here...
+        Waiting for student details...
     </div>
 </div>
 
+<!-- Script must be at END -->
 <script src="script.js"></script>
+
 </body>
 </html>
