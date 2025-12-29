@@ -1,19 +1,23 @@
 C-Programs/attendance.c
-  #include <stdio.h>
+ #include <stdio.h>
+
+struct Student {
+    int roll;
+    char name[30];
+};
 
 int main() {
-    int total, attended;
-    float percentage;
+    struct Student s;
 
-    printf("Enter total classes: ");
-    scanf("%d", &total);
+    printf("Enter Student Name: ");
+    scanf("%s", s.name);
 
-    printf("Enter attended classes: ");
-    scanf("%d", &attended);
+    printf("Enter Roll Number: ");
+    scanf("%d", &s.roll);
 
-    percentage = (attended * 100.0) / total;
-
-    printf("Attendance Percentage = %.2f%%", percentage);
+    printf("\nStudent Details\n");
+    printf("Name: %s\n", s.name);
+    printf("Roll: %d\n", s.roll);
 
     return 0;
 }
