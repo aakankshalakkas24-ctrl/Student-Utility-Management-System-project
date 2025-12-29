@@ -7,27 +7,25 @@ Web-App/index.html
 </head>
 <body>
 
-<div class="container">
+<div class="main-container">
     <h1>🎓 Student Utility Management System</h1>
 
-    <div class="input-box">
+    <div class="form-box">
         <input type="text" id="name" placeholder="Student Name">
         <input type="number" id="roll" placeholder="Roll Number">
         <input type="number" id="attendance" placeholder="Attendance (%)">
         <input type="number" id="marks" placeholder="Marks">
 
-        <!-- IMPORTANT: type="button" -->
         <button type="button" onclick="showDetails()">Submit</button>
     </div>
 
     <!-- OUTPUT BOX -->
-    <div class="output-box" id="output">
-        Waiting for student details...
+    <div class="result-box" id="output">
+        <p class="placeholder">Student details will appear here</p>
     </div>
 </div>
 
-<!-- Script must be at END -->
 <script src="script.js"></script>
-
 </body>
 </html>
+
