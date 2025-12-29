@@ -1,51 +1,69 @@
 Web-App/style.css
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    font-family: Arial, sans-serif;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    font-family: "Segoe UI", sans-serif;
 }
 
-.container {
-    width: 400px;
-    margin: auto;
+.main-container {
+    width: 420px;
+    margin: 50px auto;
     background: white;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 50px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     text-align: center;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 20px;
 }
 
-.input-box input {
-    width: 90%;
+.form-box input {
+    width: 95%;
     padding: 10px;
-    margin: 8px;
+    margin: 7px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 14px;
 }
 
 button {
+    margin-top: 12px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 20px;
     background: linear-gradient(to right, #ff512f, #dd2476);
     color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 20px;
+    font-size: 15px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 button:hover {
     opacity: 0.9;
 }
 
-.output-box {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background: #f4f4f4;
-    font-size: 16px;
+.result-box {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    text-align: left;
+    min-height: 120px;
 }
+
+.placeholder {
+    color: #999;
+    text-align: center;
+}
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.value.name { color: #3f51b5; }
+.value.roll { color: #009688; }
+.value.attendance { color: #4caf50; }
+.value.marks { color: #9c27b0; }
