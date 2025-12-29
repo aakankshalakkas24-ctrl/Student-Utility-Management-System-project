@@ -2,12 +2,13 @@ Web-App/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Student Utility Management System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="main-container">
+<div class="container">
     <h1>🎓 Student Utility Management System</h1>
 
     <div class="form-box">
@@ -15,11 +16,9 @@ Web-App/index.html
         <input type="number" id="roll" placeholder="Roll Number">
         <input type="number" id="attendance" placeholder="Attendance (%)">
         <input type="number" id="marks" placeholder="Marks">
-
-        <button type="button" onclick="showDetails()">Submit</button>
+        <button type="button" onclick="showResult()">Submit</button>
     </div>
 
-    <!-- OUTPUT BOX -->
     <div class="result-box" id="output">
         <p class="placeholder">Student details will appear here</p>
     </div>
@@ -28,4 +27,3 @@ Web-App/index.html
 <script src="script.js"></script>
 </body>
 </html>
-
