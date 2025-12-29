@@ -3,28 +3,31 @@ CPP-Programs/student.cpp
 using namespace std;
 
 class Student {
-    int marks;
 public:
+    int roll;
+    int attendance;
+    float marks;
+
     void input() {
-        cout << "Enter marks: ";
+        cout << "Enter Roll Number: ";
+        cin >> roll;
+        cout << "Enter Attendance (%): ";
+        cin >> attendance;
+        cout << "Enter Marks: ";
         cin >> marks;
     }
 
-    void displayGrade() {
-        if (marks >= 90)
-            cout << "Grade: A";
-        else if (marks >= 75)
-            cout << "Grade: B";
-        else if (marks >= 50)
-            cout << "Grade: C";
-        else
-            cout << "Grade: Fail";
+    void display() {
+        cout << "\n--- Student Report ---\n";
+        cout << "Roll Number: " << roll << endl;
+        cout << "Attendance: " << attendance << "%" << endl;
+        cout << "Marks: " << marks << endl;
     }
 };
 
 int main() {
     Student s;
     s.input();
-    s.displayGrade();
+    s.display();
     return 0;
 }
