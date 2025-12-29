@@ -2,52 +2,26 @@ Web-App/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Student Utility Management System</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Student Utility Management System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page">
-  <div class="card">
-    <h1>Student Utility Management System</h1>
+<div class="container">
+    <h1>🎓 Student Utility Management System</h1>
 
-    <div class="instruction-box">
-      <h3>Instructions:</h3>
-      <ol>
-        <li>Enter total classes and attended classes.</li>
-        <li>Click "Start Calculation" to validate input.</li>
-        <li>During 20 seconds, background will change randomly and countdown timer will show.</li>
-        <li>After 20 seconds, result will display in this box.</li>
-        <li>Result will be shown for 10 seconds, then "Final Result" will appear word by word with sound.</li>
-      </ol>
+    <div class="input-box">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="number" id="roll" placeholder="Roll Number">
+        <input type="number" id="attendance" placeholder="Attendance (%)">
+        <input type="number" id="marks" placeholder="Marks">
+        <button onclick="showDetails()">Submit</button>
     </div>
 
-    <div class="input-group">
-      <label>Total Classes:</label>
-      <input type="number" id="totalClasses" placeholder="Enter total classes">
+    <div class="output-box" id="output">
+        Student details will appear here...
     </div>
-
-    <div class="input-group">
-      <label>Attended Classes:</label>
-      <input type="number" id="attendedClasses" placeholder="Enter attended classes">
-    </div>
-
-    <button onclick="startProcess()">Start Calculation</button>
-
-    <div class="result-box" id="resultBox">
-      Result and instructions will appear here
-    </div>
-
-    <div class="countdown-box" id="countdownBox">
-      <!-- Countdown will appear here -->
-    </div>
-
-  </div>
 </div>
-
-<!-- Sound effect -->
-<audio id="beepSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
 
 <script src="script.js"></script>
 </body>
