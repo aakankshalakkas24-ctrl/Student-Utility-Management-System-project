@@ -1,29 +1,44 @@
 Web-App/script.js
-function showDetails() {
-    let name = document.getElementById("name").value;
-    let roll = document.getElementById("roll").value;
-    let attendance = document.getElementById("attendance").value;
-    let marks = document.getElementById("marks").value;
+function generateReport() {
+    const name = document.getElementById("name").value;
+    const roll = document.getElementById("roll").value;
+    const attendance = document.getElementById("attendance").value;
+    const marks = document.getElementById("marks").value;
 
-    if (name === "" || roll === "" || attendance === "" || marks === "") {
-        alert("Please fill all fields");
+    if (!name || !roll || !attendance || !marks) {
+        alert("Please fill all fields!");
         return;
     }
 
     let grade = "";
+    let statusColor = "";
 
-    if (marks >= 80) grade = "A";
-    else if (marks >= 60) grade = "B";
-    else if (marks >= 40) grade = "C";
-    else grade = "Fail";
+    if (marks >= 80) { grade = "Distinction (A+)"; statusColor = "var(--success)"; }
+    else if (marks >= 60) { grade = "First Class (B)"; statusColor = "var(--primary)"; }
+    else if (marks >= 40) { grade = "Pass (C)"; statusColor = "var(--warning)"; }
+    else { grade = "Fail (F)"; statusColor = "var(--danger)"; }
 
-    document.getElementById("result").innerHTML = `
-        <h3>📋 Student Report</h3>
-        <p><b>Name:</b> <span class="name">${name}</span></p>
-        <p><b>Roll No:</b> <span class="roll">${roll}</span></p>
-        <p><b>Attendance:</b> <span class="attendance">${attendance}%</span></p>
-        <p><b>Marks:</b> <span class="marks">${marks}</span></p>
-        <p><b>Grade:</b> <span class="grade">${grade}</span></p>
+    // Hide placeholder and show report
+    document.getElementById("placeholder-text").style.display = "none";
+    const reportBox = document.getElementById("report-output");
+    reportBox.style.display = "block";
+
+    reportBox.innerHTML = `
+        <div class="report-header">
+            <h2>📜 Student Analytical Report</h2>
+            <p>Official Record for Academic Year 2025-26</p>
+        </div>
+        <div class="data-grid">
+            <div class="data-item"><small>STUDENT NAME</small><span>${name}</span></div>
+            <div class="data-item"><small>ROLL NUMBER</small><span>#${roll}</span></div>
+            <div class="data-item"><small>ATTENDANCE</small><span>${attendance}%</span></div>
+            <div class="data-item"><small>SCORE</small><span>${marks} / 100</span></div>
+            <div class="grade-box" style="background: ${statusColor}; color: white;">
+                ${grade}
+            </div>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; text-align:center; opacity: 0.6;">
+            System Generated Report - Verified ✅
+        </p>
     `;
 }
-
