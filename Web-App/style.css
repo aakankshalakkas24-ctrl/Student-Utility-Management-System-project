@@ -11,7 +11,7 @@ body {
 .app-card {
     display: flex;
     width: 850px;
-    background: white;
+    background: pink;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -48,7 +48,7 @@ button {
     width: 100%;
     padding: 15px;
     background: #2c3e50;
-    color: white;
+    color: lightblue;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -75,7 +75,7 @@ button {
     padding: 20px;
     margin-top: 15px;
     border-radius: 8px;
-    color: white;
+    color: orange;
     font-size: 1.2rem;
     font-weight: bold;
 }
