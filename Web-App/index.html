@@ -2,37 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management System</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Student Utility Management System</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="main-container">
-    <div class="app-card">
-        <div class="input-panel">
-            <h2>🎓 Registration</h2>
-            <div class="form-group">
-                <input type="text" id="userName" placeholder="Full Name">
-                <input type="number" id="userRoll" placeholder="Roll Number">
-                <input type="number" id="userAttendance" placeholder="Attendance (%)">
-                <input type="number" id="userMarks" placeholder="Total Marks">
-                <button onclick="generateAnalysis()">GENERATE ANALYSIS</button>
-            </div>
+    <header>
+        <h1>Student Utility Management System</h1>
+        <p>One platform for all student needs</p>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <h2>Notes Management</h2>
+            <p>Upload, view and download study notes.</p>
+            <button>Open</button>
         </div>
 
-        <div class="output-panel" id="outputPanel">
-            <div id="status-message">
-                <div class="icon">📊</div>
-                <h3>System Ready</h3>
-                <p>Awaiting student data...</p>
-            </div>
-            <div id="final-report" style="display: none;">
-                </div>
+        <div class="card">
+            <h2>Attendance</h2>
+            <p>Check and manage student attendance.</p>
+            <button>Open</button>
         </div>
-    </div>
-</div>
 
-<script src="script.js"></script>
+        <div class="card">
+            <h2>Timetable</h2>
+            <p>View class schedules and updates.</p>
+            <button>Open</button>
+        </div>
+
+        <div class="card">
+            <h2>Result</h2>
+            <p>Check exam results easily.</p>
+            <button>Open</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Student Utility Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
