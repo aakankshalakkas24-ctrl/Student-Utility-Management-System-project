@@ -1,81 +1,85 @@
-body {
+* {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    height: 100vh;
-}
-
-.app-card {
-    display: flex;
-    width: 850px;
-    background: pink;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-    border: 1px solid #ddd;
-}
-
-.input-panel {
-    flex: 1;
-    padding: 40px;
-    background: #ffffff;
-    border-right: 2px solid #f0f0f0;
-}
-
-.output-panel {
-    flex: 1.2;
-    padding: 40px;
-    background: #fafafa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Input Styling */
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("../images/bg.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #00e6e6;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* Cards Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(0, 230, 230, 0.3);
+}
+
+.card h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    background: #2c3e50;
-    color: lightblue;
+    padding: 8px 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff0080, #7928ca);
+    color: white;
     cursor: pointer;
-    font-weight: bold;
 }
 
-/* Multi-Colored Output Boxes */
-.report-item {
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 600;
+button:hover {
+    opacity: 0.85;
 }
 
-.name-box { background-color: #e3f2fd; color: #0d47a1; border-left: 5px solid #0d47a1; }
-.roll-box { background-color: #f3e5f5; color: #4a148c; border-left: 5px solid #4a148c; }
-.att-box  { background-color: #e8f5e9; color: #1b5e20; border-left: 5px solid #1b5e20; }
-.mark-box { background-color: #fff3e0; color: #e65100; border-left: 5px solid #e65100; }
-
-.grade-banner {
+/* Footer */
+footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    color: orange;
-    font-size: 1.2rem;
-    font-weight: bold;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
 }
