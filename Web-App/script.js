@@ -1,7 +1,9 @@
-const buttons = document.querySelectorAll("button");
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card");
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        alert("Feature will be available soon!");
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            alert("This feature will be activated in the next update!");
+        });
     });
 });
