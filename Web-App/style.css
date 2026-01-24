@@ -1,13 +1,21 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url("../images/bg.jpg") center/cover no-repeat;
+}
+
+body {
     min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("../images/college.jpg") no-repeat center center / cover;
     color: white;
 }
 
-/* Login Page */
+/* Login */
 .login-body {
     display: flex;
     justify-content: center;
@@ -17,8 +25,8 @@ body {
 .login-box {
     background: rgba(255,255,255,0.2);
     padding: 30px;
-    border-radius: 15px;
     width: 300px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -37,9 +45,9 @@ body {
 .login-box button {
     width: 100%;
     padding: 10px;
-    background: linear-gradient(45deg, #ff0080, #7928ca);
     border: none;
     border-radius: 20px;
+    background: linear-gradient(45deg,#ff0080,#7928ca);
     color: white;
     cursor: pointer;
 }
@@ -62,22 +70,22 @@ header {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
     padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
 }
 
 .card {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    font-size: 18px;
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
     cursor: pointer;
+    font-size: 18px;
 }
 
 .card:hover {
+    background: linear-gradient(135deg,#ff512f,#dd2476);
     transform: scale(1.05);
-    background: linear-gradient(135deg, #ff512f, #dd2476);
 }
